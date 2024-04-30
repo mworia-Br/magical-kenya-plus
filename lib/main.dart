@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_to_app/home.dart';
+import 'package:magical_kenya/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Webview app',
+      title: 'Magical Kenya',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

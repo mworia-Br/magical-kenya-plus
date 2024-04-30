@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.web_to_app">
+    package="com.example.magical_kenya">
 
      <!-- added these permissions -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
    <application
-        android:label="web_to_app"
+        android:label="magical_kenya"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

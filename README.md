@@ -1,4 +1,4 @@
-# web_to_app
+# magical_kenya
 
 A new Flutter project.
 
