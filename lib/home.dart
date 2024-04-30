@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late WebViewController controller;
-  bool isLoading = false; // Flag to track loading state
+  bool isLoading = true; // Flag to track loading state
   bool connectionError = false; // Flag to track connection error
 
   @override
@@ -31,13 +31,15 @@ class _HomeScreenState extends State<HomeScreen> {
               initialUrl: "https://magicalkenya.com/",
               onPageStarted: (url) {
                 setState(() {
-                  isLoading = false;
+                  isLoading =
+                      true; // Set isLoading to true when page starts loading
                   connectionError = false;
                 });
               },
               onPageFinished: (url) {
                 setState(() {
-                  isLoading = false;
+                  isLoading =
+                      false; // Set isLoading to false when page finishes loading
                 });
               },
               onWebViewCreated: (controller) {
@@ -78,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
             setState(() {
-              isLoading = false;
+              isLoading = true;
             });
             controller.reload();
           },
